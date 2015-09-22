@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/js/app/mail/mail.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/app/projects/projects.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/app/sms/sms.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/tpl/app_dashboard_v1.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/tpl/mail.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/tpl/projects.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/tpl/sms.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/tpl/sms.new.html" charset="UTF-8" />
+  </component>
+</project>

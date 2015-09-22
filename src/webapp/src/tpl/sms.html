@@ -1,0 +1,27 @@
+<div class="bg-light lter b-b wrapper-md">
+  <div class="row">
+    <div class="col-sm-6 col-xs-12">
+      <h1 class="m-n font-thin h3 text-black">SMS повідомлення</h1>
+    </div>
+  </div>
+</div>
+<div class="hbox hbox-auto-xs hbox-auto-sm" ng-controller="SMSCtrl">
+  <div class="col w-md bg-light dk b-r bg-auto">
+    <div class="wrapper b-b bg">
+      <button class="btn btn-sm btn-default pull-right visible-sm visible-xs" ui-toggle-class="show" target="#sms-menu"><i class="fa fa-bars"></i></button>
+      <a ui-sref="app.sms.compose" class="btn btn-sm btn-danger font-bold">Нове повідомлення</a>
+    </div>
+    <div class="wrapper hidden-sm hidden-xs" id="sms-menu">
+      <ul class="nav nav-pills nav-stacked nav-sm">
+        <li ng-repeat="fold in folds" ui-sref-active="active">
+          <a ui-sref="app.sms.list({fold:fold.filter})">
+            {{fold.name}}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col">
+    <div ui-view ></div>
+  </div>
+</div>

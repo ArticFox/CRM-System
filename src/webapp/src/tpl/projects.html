@@ -1,0 +1,39 @@
+<div class="bg-light lter b-b wrapper-md">
+  <div class="row">
+    <div class="col-sm-6 col-xs-12">
+      <h1 class="m-n font-thin h3 text-black">Проекти</h1>
+    </div>
+    <div class="col-sm-6 col-xs-12">
+      <input type="text" ng-model="query">
+    </div>
+  </div>
+</div>
+<div class="hbox hbox-auto-xs hbox-auto-sm" ng-controller="ProjectsCtrl">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>
+          <a href="" ng-click="sort('id')">ID
+          <i class="glyphicon" ng-class="{'glyphicon-chevron-up': isSortUp('id'), 'glyphicon-chevron-down':isSortDown('id')}"></i></a></th>
+        <th><a href="" ng-click="sort('nameProject')">Зміст проекту
+          <i class="glyphicon" ng-class="{'glyphicon-chevron-up': isSortUp('nameProject'), 'glyphicon-chevron-down':isSortDown('nameProject')}"></i></a></th>
+        <th>Замовник</th>
+        <th>Кінцевій термін</th>
+        <th>Статус</th>
+        <th>Дія</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="project in projects">
+        <td>{{project.id}}</td>
+        <td>{{project.nameProject}}</td>
+        <td>{{project.client}}</td>
+        <td>{{project.deadLine}}</td>
+        <td>{{project.status}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- /*Колличество: {{(projects. filter:doneAndFilter).length}}*/ -->
+
+</div>
+
